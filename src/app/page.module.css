@@ -1,0 +1,161 @@
+.container {
+  min-height: 100vh;
+  /* Dùng chung tông màu với Header/Footer */
+  background: linear-gradient(180deg, #0f172a 0%, #070b14 100%);
+  color: #f1f5f9;
+  padding-bottom: 50px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Tiêu đề trang chủ phong cách Cyber */
+.heroSection {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionTitle {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sectionTitle span {
+  color: #00f0ff; /* Màu Cyan của Header */
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+}
+
+.neonDivider {
+  width: 150px;
+  height: 4px;
+  background: #00f0ff;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+/* Lưới Menu */
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+/* Thẻ món ăn đồng bộ với tông màu Header */
+.foodCard {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 240, 255, 0.1); /* Viền Cyan mờ */
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.foodCard:hover {
+  transform: translateY(-15px);
+  border-color: #00f0ff;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+}
+
+.imageArea {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+
+.foodImage {
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.foodCard:hover .foodImage {
+  transform: scale(1.1);
+}
+
+/* Badge Hot/New */
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #00f0ff;
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 5;
+  box-shadow: 0 0 15px #00f0ff;
+}
+
+.infoArea {
+  padding: 25px;
+}
+
+.infoArea h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.8rem;
+  color: #00f0ff; /* Đồng bộ màu */
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* Thanh số lượng (Progress Bar) */
+.stockWrapper {
+  margin-bottom: 25px;
+}
+
+.stockInfo {
+  font-size: 13px;
+  color: #94a3b8;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #00f0ff, #3b82f6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+/* Nút đặt món */
+.orderBtn {
+  width: 100%;
+  padding: 16px;
+  background: transparent;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  font-weight: 800;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.orderBtn:hover {
+  background: #00f0ff;
+  color: #000;
+  box-shadow: 0 0 20px #00f0ff;
+}

@@ -1,0 +1,19 @@
+.slick-prev:before, .slick-next:before {
+    color: burlywood !important;
+  }
+  .slick-prev, .slick-next {
+    z-index: 10 !important;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: #00f0ff !important;
+    font-size: 30px !important;
+  }
+  
+  .slick-prev {
+    left: 10px !important;
+  }
+    
+  .slick-next {
+    right: 10px !important;
+  } 

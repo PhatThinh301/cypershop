@@ -1,0 +1,68 @@
+.container { background: #070b14; min-height: 100vh; color: #fff; }
+.mainContent { max-width: 1100px; margin: 0 auto; padding: 20px 20px 80px; }
+
+.productContainer {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 50px;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 32px;
+  padding: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.itemName { font-size: 2.8rem; font-weight: 900; text-transform: uppercase; margin: 10px 0; color: #fff; }
+.priceHighlight { font-size: 2.5rem; color: #00f0ff; font-weight: 800; text-shadow: 0 0 15px rgba(0, 240, 255, 0.4); margin-bottom: 20px; }
+.descriptionText { color: #94a3b8; line-height: 1.6; margin-bottom: 30px; }
+
+.miniStats { margin-bottom: 30px; display: flex; flex-direction: column; gap: 12px; }
+.statItem label { font-size: 10px; color: #64748b; letter-spacing: 1px; }
+.barBackground { height: 4px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+.barFill { height: 100%; background: #00f0ff; box-shadow: 0 0 10px #00f0ff; }
+
+.buttonGroup { display: flex; gap: 15px; }
+.primaryBtn { flex: 2; padding: 18px; background: #00f0ff; border: none; border-radius: 12px; font-weight: 900; cursor: pointer; transition: 0.3s; }
+.primaryBtn:hover { transform: translateY(-3px); box-shadow: 0 0 25px #00f0ff; }
+.secondaryBtn { flex: 1; padding: 18px; background: transparent; border: 1px solid #00f0ff; color: #00f0ff; border-radius: 12px; font-weight: 800; cursor: pointer; }
+
+.relatedSection { padding-top: 50px; border-top: 1px solid rgba(0, 240, 255, 0.1); }
+.relatedTitle { font-size: 1.8rem; font-weight: 900; margin-bottom: 40px; color: #fff; letter-spacing: 2px; }
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.relatedCard {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 240, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.relImageArea { height: 160px; position: relative; }
+.relImage { object-fit: cover; }
+.relBadge {
+  position: absolute; top: 10px; right: 10px; background: #00f0ff; color: #000;
+  padding: 4px 10px; border-radius: 6px; font-size: 10px; font-weight: 900;
+}
+
+.relInfoArea { padding: 20px; }
+.relPrice { color: #00f0ff; font-weight: 800; font-size: 1.3rem; margin-bottom: 15px; }
+.relBtn { width: 100%; padding: 10px; background: transparent; border: 1px solid #00f0ff; color: #00f0ff; border-radius: 8px; font-size: 12px; cursor: pointer; }
